@@ -31,6 +31,14 @@ lab:
 ### タスク 1: Bicep CLI をインストールする
 
 1. ローカル ターミナルを開きます。
+1. Azure アカウントにログインします。
+
+   ```bash
+   az login
+   ```
+
+   > **注:** プロンプトに従って、Azure アカウントで認証を行います。 これにより、認証用に Web ブラウザーが開きます。
+
 1. Bicep がインストールされていることを確認するには、次を実行します。
 
    ```bash
@@ -280,7 +288,7 @@ Bicep テンプレートを使用して、SQL Database バックエンドで Azu
 1. このリソースの直後に、autoscaleSetting 構成を追加します。
 
    ```bicep
-   resource autoscaleSetting 'Microsoft.Insights/autoscaleSettings@2024-01-01-preview' = {
+   resource autoscaleSetting 'Microsoft.Insights/autoscaleSettings@2022-10-01' = {
    name: 'autoscale-rule'
    location: location
    properties: {

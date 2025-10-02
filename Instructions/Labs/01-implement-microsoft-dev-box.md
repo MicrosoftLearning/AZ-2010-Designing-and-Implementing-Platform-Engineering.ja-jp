@@ -455,7 +455,7 @@ Microsoft Dev Box では、プロジェクト レベルの機能へのアクセ�
          "properties": {
            "buildTimeoutInMinutes": 100,
            "vmProfile": {
-             "vmSize": "Standard_DS2_v2",
+             "vmSize": "Standard_D2s_v3",
              "osDiskSizeGB": 127
            },
            "source": {
@@ -607,6 +607,17 @@ Microsoft Dev Box チームのカスタマイズ用にイメージングを構�
 1. **[devcenter-project-01 \| カタログ]** ページで、**[+ 追加]** を選択します。
 1. **[カタログの追加]** ペインで、**[名前]** テキスト ボックスに「**`image-definitions-01`**」と入力し、**[カタログ ソース]** セクションで **[GitHub]** を選択し、**[認証の種類]** で **[GitHub アプリ]** を選択し、**[このカタログを自動的に同期する]** チェックボックスをオンのままにして **[GitHub でサインイン]** を選択します。
 1. メッセージが表示されたら、**[GitHub でサインイン]** ウィンドウで GitHub 資格情報を入力し、**[サインイン]** を選択します。
+1. "アカウントに関連付けられた GitHub リポジトリが見つからなかった" ことを伝えるメッセージと、**リポジトリを構成する**ためのリンクが表示される場合、通常、これは初回セットアップの間、または GitHub アプリが以前に構成されていない場合に発生します。 Microsoft DevCenter GitHub アプリを設定するには、次の追加手順を完了します。
+
+   1. **リポジトリを構成する**リンクを選択します。 これにより、GitHub に移動する新しいブラウザー タブまたはウィンドウが開きます。
+   1. GitHub の **[Install Microsoft DevCenter]** ページで、個人用アカウントにアプリをインストールするよう求められます。
+   1. **[Install on your personal account]** セクションで、次のいずれかのオプションを選びます。
+      - アカウント内の現在および将来のすべてのリポジトリへのアクセスを許可するには、**[All repositories]** を選びます。
+      - 特定のリポジトリを選ぶには、**[Only select repositories]** を選びます。 先に進む前に、**contoso-co-eShop** リポジトリを自分の GitHub アカウントにフォークしていることを確認します。 このオプションを選んだ場合は、**[Select repositories]** ドロップダウンを使って、**contoso-co-eShop** リポジトリ (または Azure DevCenter で使用できるようにする他のリポジトリ) を選びます。
+   1. **[with these permissions]** セクションで付与されるアクセス許可を確認します。通常は、[Read access to code and metadata] が含まれます。
+   1. **[Install]** を選んで、GitHub アプリのインストールを完了します。
+   1. Azure portal にリダイレクトされます。 リダイレクトが自動的に行われない場合は、GitHub のタブを閉じて Azure portal に戻ります。
+   1. Azure portal に戻り、**[カタログの追加]** ページで、**[最新の情報に更新]** を選ぶか、ページを更新してリポジトリの一覧を読み込み直します。
 
    > **注:** この手順を完了するには、https://github.com/MicrosoftLearning/contoso-co-eShop リポジトリを GitHub アカウントにフォークする必要があります。
 
