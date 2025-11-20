@@ -1,3 +1,7 @@
+> ⚠️ **注意**  
+> このリポジトリは **2025 年 11 月 14 日**にアーカイブされます。  
+> DevOps ラボの新しいリポジトリは次の場所にあります。[MicrosoftLearning/mslearn-devops](https://github.com/MicrosoftLearning/mslearn-devops)
+
 # Microsoft ラボの演習
 <!-- Change the title above as appropriate -->
 
